@@ -1,0 +1,20 @@
+
+
+/*
+ * buttons
+ * --------------------------------------------------
+ */
+
+
+/* extend / over-ride the AdminLTE buttons.less styling */
+
+@import "variables.less"; 
+
+/* style primary button using @brand-primary */
+.btn-primary {
+  background-color: @brand-primary;
+  border-color: darken(@brand-primary, 5%);
+  &:hover, &:active, &.hover {
+    background-color: darken(@brand-primary, 5%);
+  }
+}

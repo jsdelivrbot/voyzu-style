@@ -1,0 +1,19 @@
+{
+  "name": "voyzu-style",
+  "author": "Chris Lennon",
+  "version": "0.1.0",
+  "description": "Global CSS Styling for voyzu web application",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cjlennon/voyzu-style.git"
+  },
+  "scripts": {
+    "build": "autoless --no-watch src\\less & copy src\\less\\voyzu-style.css dist\\css\\voyzu-style.css",
+    "git-nuke-history": "git checkout --orphan latest_branch & git add -A & git commit -am \"initial commit\" & git branch -D master &  git branch -m master & git push -f origin master"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoless": "^0.1.7"
+  }
+}

@@ -1,0 +1,54 @@
+// style the table.  Base styling comes from bootstrap.  bootstrap-table adds the styling it needs
+// then finally this stylesheet adds some touches like the hover icons,
+
+//import variables
+@import "variables.less";
+
+
+/*don't give the user the option to choose rows per page, this just clutters up the screen*/
+.bootstrap-table .page-list{
+display: none!important;
+}
+
+// style bootstrap-table
+.voyzu-table{
+
+  //color of icon before user hovers over it
+  @icon-before-hover: #eee;
+
+  .button {
+    color: @icon-before-hover;
+    cursor: pointer;
+    vertical-align: middle;
+    padding-right: 10px
+  }
+
+  .edit:hover {
+    color: @blue;
+  }
+
+  .delete:hover {
+    color: @red;
+  }
+
+
+  //  responsive
+
+  .narrow-only{
+    display: none;
+  }
+
+  //respond to small width
+  @media screen and (max-width: 768px) {
+    .narrow-only{
+      display:table-cell;
+    }
+    .wide-only{
+      display: none;
+    }
+
+    .button {
+      color: #0a79df;
+    }
+  }
+}

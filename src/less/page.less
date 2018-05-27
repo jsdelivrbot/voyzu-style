@@ -1,0 +1,82 @@
+/* styling for the application main style, two top navs, the side nav and main content */
+
+@nav-size-total:110px;
+
+
+.voyzu-page-container{
+  /* container holds the left menu and the content. */
+  background-color:#f9fafc;
+  margin-top:0px;
+  padding-top:0px;
+    min-height: calc(~"100% - " @nav-size-total);
+}
+
+@media screen and (max-width: 992px) {
+  /*respond to medium width */
+  .content-header ol{
+    /* hide breadscrumb */
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* respond to small width */
+  /* Make H1 smaller */
+  .content-header h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+/* direct port from  https://getbootstrap.com/examples/offcanvas/offcanvas.css */
+
+ @media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  /* row-offcanvas-right */
+  // row-offcanvas-right 
+  .row-offcanvas-right {
+  /* row-offcanvas-right */
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
