@@ -16,10 +16,10 @@ Include the following  in the `<head>` tag of your html.
 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!--AdminLTE -->
-<link rel="stylesheet" href="https://rawgit.com/almasaeed2010/AdminLTE/master/dist/css/AdminLTE.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/almasaeed2010/AdminLTE/dist/css/AdminLTE.css">
 
 <!-- voyzu-style-->
-<link rel="stylesheet" href="https://rawgit.com/cjlennon/voyzu-style/master/dist/css/voyzu-style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cjlennon/voyzu-style/dist/css/voyzu-style.css">
 ````
 
 ## Local dev environment set up
